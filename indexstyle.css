@@ -19,6 +19,7 @@ body {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
+    word-spacing: 2rem;
 }
 
 .horizantal-list li {
@@ -37,13 +38,13 @@ body {
     text-decoration: none;
 }
 
-.nav-menu {
-    transition: color 3s, border-bottom 4s;
+.nav-menu li a {
+    transition: all 2s;
 }
 
 .nav-menu li a:hover {
-    color: lightgray;
-    border-bottom: 1px solid white;
+    color: red;
+    border-bottom: 2px solid red;
 }
 
 .text-center {
@@ -70,10 +71,12 @@ body {
     padding: 15px;
     border-radius: 50%;
     font-size: 30px;
+    transition: all 1s;
 }
 
 .horizantal-social li a i:hover {
     box-shadow: 0px 0px 8px 4px lightgray;
+    color: purple;
 }
 
 /* MAIN */
@@ -123,7 +126,7 @@ section:nth-child(2n + 1) {
     height: 12rem;
     width: 12rem;
     margin: auto;
-    margin-top: -12vh;
+    margin-top: -16vh;
     position: relative;
     border-radius: 50%;
     box-shadow: 0px 0px 8px 4px lightgray;
@@ -151,6 +154,7 @@ section:nth-child(2n + 1) {
 }
 
 /* Section Skills */
+
 .mb75px {
     margin-bottom: 50px;
 }
@@ -165,7 +169,7 @@ section:nth-child(2n + 1) {
 
 .skill-progress {
     width: 7rem;
-    height: 1.4rem;
+    height: 1.75rem;
     background-color: darkgray;
     border-radius: 0.8rem;
     margin: 20px;
@@ -178,6 +182,10 @@ section:nth-child(2n + 1) {
 .skill-name span {
     color: white;
     margin-left: 10px;
+    padding: 1rem;
+    padding-top: 1rem;
+    font-size: 0.80rem;
+    font-family: Ayuthaya;
 }
 
 /* Percentage Class */
@@ -186,11 +194,73 @@ section:nth-child(2n + 1) {
     height: inherit;
 }
 
-/* Section Portfolio */
+/* Section Work Experiance */
 
-#portfolio {
-    background-color: white;
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 2px solid black;
 }
+
+.timeline-box{
+    position: relative;
+    width: 40%;
+    min-height: 12rem;
+    margin: 5px;
+    left: 5%;
+    border: 2px solid black;
+}
+
+.timeline-box:nth-child(2n):after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: darkgrey;
+    left: -10%;
+    top: 30%;
+    z-index: 1;
+
+}
+
+.timeline-box:nth-child(2n+1):after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: darkgray;
+    right: -12.75%;
+    top: 35%;
+    z-index: 1;
+
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline-divder {
+    position: absolute;
+    height: 73%;
+    width: 0;
+    border: 2px dashed purple;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    margin-top: -1.5rem;
+    top: 20%;
+    transform: rotate(90deg);
+    z-index: 2;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+/* Section Portfolio */
 
 .skill-display1 {
     width: 90%;
